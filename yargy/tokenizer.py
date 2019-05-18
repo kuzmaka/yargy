@@ -39,7 +39,7 @@ RIGHT_QUOTES = '»“ʻ'
 QUOTES = LEFT_QUOTES + GENERAL_QUOTES + RIGHT_QUOTES
 
 RULES = [
-    TokenRule(RUSSIAN, r'[а-яё]+'),
+    TokenRule(RUSSIAN, r'[а-яёіїєґ’]+'),
     TokenRule(LATIN, r'[a-z]+'),
     TokenRule(INT, r'\d+'),
     TokenRule(
